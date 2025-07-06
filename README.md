@@ -21,7 +21,7 @@ This tutorial will walk you through step by step how to develop, test, and deplo
 
 ### Overview
 
-This Mule Application makes use of the HTTP Listener and the Set Payload components to return a "Hello Mule" message when the endpoint is called.
+This Mule Application makes use of the HTTP Listener and the Set Payload components to return a "Primeiro Projeto Mule" message when the endpoint is called.
 
 > This application is designed to run on MuleSoft's Anypoint Studio.
 
@@ -47,6 +47,3 @@ First you have to download MuleSoft's IDE: Anypoint Studio. After that, you can 
 
 Contributions are what make the MuleSoft community such an amazing place. Any contributions you make are **greatly appreciated**.
 	
-See [contributing.md](/contributing.md) for the MuleSoft Developer principles.
-
-
