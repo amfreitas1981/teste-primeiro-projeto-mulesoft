@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="db13df46-82f0-4f8d-aa0b-0e4e31b4139b" basePath="/" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="teste-primeiro-projeto-mulesoftFlow" doc:id="00b17327-ff0e-410b-951d-979c407047b8" >
+		<http:listener doc:name="Listener" doc:id="b6c8b215-c0c9-42d9-9e9c-ffcaeb031c2e" config-ref="HTTP_Listener_config" path="/teste-primeiro-projeto-mulesoft"/>
+		<set-payload value="Teste primeiro projeto Mulesoft!" doc:name="Set Payload" doc:id="89929728-6f41-462d-8329-e53294c45cd9" />
+	</flow>
+</mule>
